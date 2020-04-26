@@ -22,7 +22,7 @@ services:
       - /dev/hidraw0:/dev/hidraw0
       - /opt/appdata/co2:/var/local/monitor
     ports:
-      - 1080:80
+      - 80:80
     restart: unless-stopped
 ```
 
