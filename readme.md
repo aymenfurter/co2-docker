@@ -1,6 +1,6 @@
 # co2-docker
 
-A dockerfile to run [officeweather](https://github.com/aymenfurter/officeweather/archive/master.zip)
+A dockerfile to run [officeweather](https://github.com/aymenfurter/officeweather)
 
 ## Installation
 `docker run -t -i --privileged -v /dev/hidraw0:/dev/hidraw0 -p 1080:80 afurter/co2-docker`
