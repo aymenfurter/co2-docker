@@ -3,8 +3,7 @@
 A dockerfile to run [officeweather](https://github.com/aymenfurter/officeweather/archive/master.zip)
 
 ## Installation
-
-sudo docker run -t -i --privileged -v /dev/hidraw0:/dev/hidraw0 -p 1080:80 afurter/co2-docker
+`docker run -t -i --privileged -v /dev/hidraw0:/dev/hidraw0 -p 1080:80 afurter/co2-docker`
 If you want persistent data, you have to mount /var/local/monitor
 
 ## Open Todos
