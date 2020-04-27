@@ -12,7 +12,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone &
 
 WORKDIR /home/monitor
 
-RUN curl -LO https://github.com/wreiner/officeweather/archive/master.zip && unzip master.zip && mv ./officeweather-master/* . \
+RUN curl -LO https://github.com/aymenfurter/officeweather/archive/master.zip && unzip master.zip && mv ./officeweather-master/* . \
 	&& cp monitor.py /usr/bin \
 	&& mkdir /var/local/monitor \
 	&& rsync -av --progress web/* /var/www/html \
